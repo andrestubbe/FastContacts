@@ -35,7 +35,7 @@ public final class CardDavServer implements AutoCloseable {
         this.basePath = basePath.endsWith("/") ? basePath.substring(0, basePath.length() - 1) : basePath;
         this.registry = Objects.requireNonNull(registry, "Registry cannot be null");
         this.server = HttpServer.create(new InetSocketAddress(port), 0);
-        this.server.setExecutor(Executors.newVirtualThreadPerTaskExecutor());
+        this.server.setExecutor(Executors.newCachedThreadPool());
         setupHandlers();
     }
 
