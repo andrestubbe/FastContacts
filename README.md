@@ -67,6 +67,23 @@ run-demo.bat
 
 ---
 
+
+---
+
+## 📑 Table of Contents
+- [Why ](#why-fastcontacts)
+- [Key Features](#key-features)
+- [Architecture](#architecture)
+- [Performance](#performance)
+- [Real-World Examples](#real-world-examples)
+- [API Quick Reference](#api-quick-reference)
+- [Installation](#installation)
+- [Documentation](#documentation)
+- [Platform Support](#platform-support)
+- [Related Projects](#related-projects)
+- [License](#license)
+
+---
 ## 🚀 Quick Start
 
 ### 1. Maven Dependency (via JitPack)
@@ -170,3 +187,20 @@ run-benchmark.bat
 
 FastContacts is released under the [MIT License](LICENSE).
 Part of the **FastJava** ecosystem.
+
+
+---
+
+## Related Projects
+
+Part of the **FastJava** high-performance ecosystem:
+* [FastCore](https://github.com/andrestubbe/FastCore) — Unified JNI extraction and native library loader
+* [FastANSI](https://github.com/andrestubbe/FastANSI) — Ultra-fast 24-bit TrueColor terminal styling
+* [FastAIRuntime](https://github.com/andrestubbe/FastAIRuntime) — Autonomous agent runtime and process supervisor
+* [FastFileSystem](https://github.com/andrestubbe/FastFileSystem) — Unified mmap indexing and NTFS live sync
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
