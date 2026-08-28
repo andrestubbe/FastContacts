@@ -1,0 +1,27 @@
+TITLE:
+FastContacts: High-Speed CardDAV & vCard (.vcf) Engine (Java 17+ & FastANSI) 🚀
+
+DESCRIPTION:
+Introducing FastContacts — the high-throughput vCard parsing, indexing, and RFC 6352 CardDAV server engine for the FastJava ecosystem. Watch FastContacts ingest 100,000+ vCard entries in milliseconds, execute sub-microsecond multi-indexed queries across emails, phone numbers, and categories, and drive live incremental delta synchronization via embedded CardDAV virtual threads.
+
+Built with zero external dependencies in modern Java 17+, FastContacts eliminates memory bloat and garbage collection pauses across high-volume contacts management, autonomous agent directories, and enterprise CRM backends.
+
+TECHNICAL HIGHLIGHTS:
+- Streaming Zero-Allocation vCard Parsing: Ingests vCard 2.1, 3.0, and 4.0 specifications at hundreds of thousands of contacts per second.
+- Sub-Microsecond Multi-Indexing: Instant O(1) hash email lookups, E.164 normalized phone matching, category tags, and inverted prefix tries.
+- Embedded RFC 6352 CardDAV Server: Full HTTP/1.1 CardDAV implementation supporting PROPFIND discovery, addressbook queries, and RFC 6578 sync-collection delta tokens with Virtual Threads.
+- FastANSI 120-Column Terminal HUD: Clean dark-gray framing (├──, └──), bold white value highlights, and middle-path truncation.
+- Standardized JMH Benchmark Suite: Comprehensive microbenchmarks for parsing, serialization, and registry lookups.
+
+GITHUB REPOSITORIES:
+https://github.com/andrestubbe/FastContacts
+https://github.com/andrestubbe/FastANSI
+https://github.com/andrestubbe/FastCore
+https://github.com/andrestubbe/FastAIAgent
+
+PHILOSOPHY:
+Zero Allocation Bottlenecks. Sub-Microsecond Multi-Indexing. Native-Speed Synchronization.
+If you're interested in pushing the JVM to its absolute limits, subscribe for more.
+
+TAGS:
+Java, FastJava, FastContacts, CardDAV, vCard, VCF, AddressBook, Performance, ZeroCopy, LowLatency, JMH, Terminal, CLI
