@@ -78,6 +78,13 @@ Legacy address book libraries (ez-vcard) suffer from excessive GC pressure and s
 2. **Normalized Multi-Index**: Maps E.164 phone numbers, lowercase emails, and category tags to primitive integer array references.
 3. **Embedded CardDAV Server**: Full RFC 6352 support with lightweight incremental delta tracking (RFC 6578).
 
+| Feature | ez-vcard | Standard Java VCF / DOM | FastContacts |
+|:---|:---|:---|:---|
+| **Parsing Model** | Heavy nested AST objects | Full DOM in-memory tree | **Streaming zero-copy token parser** |
+| **Phone / Email Lookups**| $O(N)$ full list iteration | $O(N)$ sequential regex scan | **$O(1)$ normalized multi-index** |
+| **CardDAV Server Sync** | Not supported | Heavy JAXB / DOM WebDAV | **Embedded RFC 6352 / 6578 delta sync** |
+| **GC Pause Footprint** | Massive object churn per card | High memory bloat | **Zero GC hot path** |
+
 ---
 
 ## Key Features
